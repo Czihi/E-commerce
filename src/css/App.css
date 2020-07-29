@@ -1,0 +1,89 @@
+.group{
+  display: flex;
+}
+.name{
+  font-weight: 800;
+  margin-left: 5%;
+  margin-right: 53%;
+}
+.groupTopbar{
+  margin-top: 3%;
+  display:flex;
+
+}
+.categories{
+  background: none;
+  margin-top: 5px;
+}
+.cart{
+  height: 40px;
+  width: 40px;
+  margin-left: 3%
+}
+.loginButton{
+  margin-left: 3%;
+  width:8%;
+  height:40px;
+  border: none;
+  background-color: white;
+}
+.dropDown{
+  margin-left: 3%;
+  max-width: 50px;
+  max-height: 50px;
+}
+.background{
+  position: absolute;
+  max-width: 70%;
+  right:0;
+  top:0;
+  z-index: -2
+}
+.shop{
+  position:absolute;
+  right:12%;
+  top:17%;
+  width: 30%;
+  height: auto;
+  z-index: -1;
+}
+
+
+.searchGroup{
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 50px;
+}
+.searchInput{
+  font-weight: 900;
+  text-indent:40px;
+  height: 50px;
+  width: 50%;
+}
+.searchLine{
+  -webkit-user-drag: none;
+  position:relative;
+  left:6px;
+  width:10px;
+  height: 52px;
+  margin-bottom: 5px;
+
+}
+.searchIcon{
+  position: relative;
+  right:3%;
+  -webkit-user-drag: none;
+  cursor: pointer;
+}
+.groupVideo{
+  margin-left: 6%;
+  margin-top: 3%
+}
+.play{
+  position: relative;
+  right: 2%;
+}
+.watchVideo{
+  font-weight: 800;
+  color: grey;
+}
