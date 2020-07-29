@@ -5,7 +5,7 @@ const Video=()=>{
     return(<div className="groupVideo">
         <img className="pinkCircle" src={pinkCircle} alt={pinkCircle}/>
         <img className="play" src={play} alt="play"/>
-        <text className="watchVideo">Watch Video</text>
+        <p className="watchVideo">Watch Video</p>
     </div>)
 };
 

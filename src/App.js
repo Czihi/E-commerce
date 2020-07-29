@@ -8,24 +8,38 @@ import {
 import TopPart from "./components/TopPart";
 import Search from "./components/Search";
 import Video from "./components/Video";
+import Bags from "./components/Bags";
+import Sunglasses from "./components/Sunglasses";
 
 class App extends Component {
     render() {
         return (<Router>
+
             <Route path="/E-commerce" exact render={
                 () => {
+
                     document.title = "Blackbox";
                     return (<div>
-                        <TopPart
-                        />
-                        <Search
-                        />
-                        <Video
-                        />
+                        <div className="backgroundGradient">
+
+                        </div>
+                        <div className="introduction">
+                            <TopPart
+                            />
+                            <Search
+                            />
+                            <Video
+                            />
+                        </div>
+                        <div className="products">
+                            <Bags/>
+                            <Sunglasses/>
+                        </div>
+
                     </div>)
                 }
             }/>
-        </Router>)
+    </Router>)
     }
 }
 
