@@ -7,7 +7,7 @@ import pinkArrow from "../images/pinkArrow.png";
 const Promise = (props) => {
     const images={"bbt": bbt, "swc": swc, "op": op, "fd":fd};
     return(<div className="promise">
-        <img src={images[props.src]} alt={props.src}/>
+        <img className="promiseImage" src={images[props.src]} alt={props.src}/>
         <h5 className="title">{props.title}</h5>
         <div className="desc">{props.desc}</div>
         <div className="groupKnowMore">

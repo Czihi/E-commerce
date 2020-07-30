@@ -4,7 +4,7 @@ import gp from "../images/googlePlayLogo.png";
 import as from "../images/appStoreLogo.png"
 const Newsletter = ()=>{
     return(<div>
-        <h3>Blackbox.lk newsletter</h3>
+        <h3 className="responsiveTitle">Blackbox.lk newsletter</h3>
         <hr/>
         <div className="mailGroup">
             <img className="searchLine" src={pinkLine} alt="pl"/>

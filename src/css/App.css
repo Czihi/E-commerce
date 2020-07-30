@@ -71,7 +71,8 @@
 .searchInput{
   font-weight: 900;
   text-indent:40px;
-  height: 50px;
+  height:  50px;
+  font-size:  calc(-38% + 1vw + 1vh);
   width: 40%;
   border: none;
   box-shadow: 0 0 30px #ccc;
@@ -150,8 +151,8 @@
 }
 .heart{
  margin-left: 20%;
-  max-height: 20px;
-  max-width: 20px;
+  max-height: 2vw;
+  max-width: 2vw;
 }
 
 .products{
@@ -253,6 +254,7 @@
   padding-bottom: 40px;
 }
 .title{
+font-size:calc(1vw + 1vh);
   margin-top: 7%;
   margin-bottom: 7%;
 }
@@ -269,11 +271,12 @@
   border-bottom: deeppink solid 3px;
 }
 .desc{
-  font-size: 13px;
+  font-size:  min(1vw,13px);
   margin-bottom: 30%;
 }
 
 .knowMore{
+  font-size:calc(0.75vw + 0.75vh);
   color: deeppink;
   text-align: center;
 }
@@ -315,6 +318,8 @@
   filter: brightness(10%);
   transform: scale(1);
   transition: 0.4s;
+  width: 100%;
+  height: auto;
 }
 .brandImage:hover{
   filter : brightness(100%);
@@ -331,7 +336,9 @@
 .horLine{
   border-top: 3px solid rgba(0, 0, 0, 0.08);
 }
-
+.responsiveTitle{
+  font-size: calc(50% + 1vw + 1vh);
+}
 .mailGroup{
   margin-top: 5%;
   height: 50px;
@@ -342,12 +349,14 @@ input::placeholder{
 .mailInput{
   font-weight: 700;
   text-indent:40px;
-  height: 50px;
+  height:  50px;
+  font-size:  calc(-38% + 1vw + 1vh);
   width: 80%;
   border: none;
   box-shadow: 0 0 10px #ccc;
 }
 .registerNow{
+  font-size:  calc(-38% + 1vw + 1vh);
   margin-top: 5%;
   color: #aaa
 }
@@ -357,14 +366,19 @@ input::placeholder{
   width: 100px;
 }
 .groupApp{
-  display: flex;
+
 }
 .follows{
-  color: #aaa
+  color: #aaa;
+  font-size:  calc(-38% + 1vw + 1vh);
+}
+.promiseImage{
+  max-height: 7vw;
+  max-width: 7vw;
 }
 .copyright{
   text-align: center;
-  color: #aaa
+  color: #aaa;
 }
 .followImage{
   cursor: pointer;
@@ -378,24 +392,28 @@ input::placeholder{
   transition: 0.5s;
   display: none;
   width: 100%;
+  height:auto;
 }
 .add{
+  font-size:  calc(-30% + 1vw + 1vh);
   border: solid 1px #ddd;
   background-color: white;
   width: 100%;
-  height: 60px;
+  height: 3vw;
 }
 .buy{
-  border: solid 0px;
+  font-size:  calc(-30% + 1vw + 1vh);;
+  border: solid 0;
   background-color: deeppink;
   color: white;
   font-weight: 600;
   width: 100%;
-  height: 60px;
+  height: 3vw
 }
 .link{
   color: #777;
   cursor: pointer;
+  font-size:  calc(-38% + 1vw + 1vh);
 }
 .link:hover{
   color: #000;

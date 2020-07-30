@@ -1,7 +1,7 @@
 import React from "react";
 const Support =()=>{
 return (<div>
-    <h3>Support</h3>
+    <h3 className="responsiveTitle">Support</h3>
     <hr/>
     <p className="link">Payment Methods</p>
     <p className="link">Frequently Asked Questions</p>

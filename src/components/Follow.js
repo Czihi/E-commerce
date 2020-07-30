@@ -9,7 +9,7 @@ const Follow = (props) => {
 
     const images={0: t, 1: th, 2: fb, 3: fbh, 4:gp, 5:gph};
     return (<div>
-        <h3>Follow us on</h3>
+        <h3 className="responsiveTitle">Follow us on</h3>
         <hr/>
         <div>
             <img onMouseOver={props.twitter} onMouseOut={props.clear} className="followImage" src={images[props.logos[0]]} alt="t"/>

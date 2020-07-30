@@ -3,7 +3,7 @@ import React from "react";
 const QuickLinks = () =>{
 
     return(<div>
-        <h3>Quick Links</h3>
+        <h3 className="responsiveTitle">Quick Links</h3>
         <hr/>
         <p className="link">Browse All Products</p>
         <p className="link">Browse Mini Stores</p>
