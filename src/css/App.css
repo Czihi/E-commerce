@@ -119,16 +119,20 @@
   position: relative;
  max-width: 30%;
   box-shadow: 0 0 30px #ccc;
-  cursor: pointer;
   margin-top: 2%;
   margin-bottom: 5%;
-  padding: 20px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .bag:hover{
   transform: scale(1.1);
   box-shadow: 0 0 40px #ccc;
-  transition: 1s;
+  transition: 0.2s;
+}
+.normalBag{
+  padding: 20px;
+}
+.normalGlasses{
+  padding: 20px;
 }
 .price{
   margin-left: 20%;
@@ -150,6 +154,7 @@
 }
 
 .groupHeartPrice{
+  transition: 0.2s;
   position:absolute;
   bottom: 5%;
   display: flex;
@@ -157,12 +162,14 @@
   width: 80%;
 }
 .bagImage{
+  transition: 0.2s;
    width: 80%;
    height: auto;
    margin-bottom: 15%;
  }
 .sunglassesImage{
   width: 80%;
+  transition: 0.2s;
   height: auto;
   margin-bottom: 15%;
 }
@@ -186,16 +193,14 @@
   position: relative;
   max-width: 30%;
   box-shadow: 0 0 30px #ccc;
-  cursor: pointer;
   margin-top: 2%;
   margin-bottom: 5%;
-  padding: 20px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .sunglass:hover{
   transform: scale(1.1);
   box-shadow: 0 0 40px #ccc;
-  transition: 1s;
+  transition: 0.2s;
 }
 .groupViewAll{
   display: flex;
@@ -342,4 +347,25 @@ input::placeholder{
   width:40px;
   margin-right: 10%;
   margin-bottom: 10%;
+}
+.groupBuy{
+  position:absolute;
+  bottom: 0;
+  transition: 0.5s;
+  display: none;
+  width: 100%;
+}
+.add{
+  border: solid 1px #ddd;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+}
+.buy{
+  border: solid 0px;
+  background-color: deeppink;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  height: 60px;
 }

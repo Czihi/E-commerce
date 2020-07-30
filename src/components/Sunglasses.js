@@ -11,16 +11,19 @@ const Sunglasses = () => {
                 name="UV protected oval wayfarer unisex sunglasses"
                 color="blue"
                 price="Rs. 1,549,80"
+                id="sunglasses1"
             />
             <Sunglass
                 name="Green Kartz Unisex Sunglasses (wyo58|40|)"
                 color="green"
                 price="Rs. 1,615,74"
+                id="sunglasses2"
             />
             <Sunglass
                 name="Raybon trendy sunglasses (White Frame) (P222BR2)"
                 color="orange"
                 price="Rs. 2,430.68"
+                id="sunglasses3"
             />
         </div>
         <div className="groupViewAll">
