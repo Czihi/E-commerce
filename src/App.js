@@ -15,9 +15,24 @@ import BrandDiv from "./components/BrandDiv";
 import EndingSection from "./components/EndingSection";
 
 class App extends Component {
+    state={
+      follows : [0, 2, 4]
+    };
+    clear=()=>{
+        this.setState({follows:[0, 2, 4]})
+    };
+    twitterHover=()=>{
+      this.setState({follows:[1, 2, 4]})
+    };
+    facebookHover=()=>{
+        this.setState({follows:[0, 3, 4]})
+    };
+    googleHover=()=>{
+        this.setState({follows:[0, 2, 5]})
+    };
+
     render() {
         return (<Router>
-
             <Route path="/E-commerce" exact render={
                 () => {
 
@@ -41,7 +56,13 @@ class App extends Component {
 
                             <PromisePanel/>
                             <BrandDiv/>
-                            <EndingSection/>
+                            <EndingSection
+                            twitter={this.twitterHover}
+                            google={this.googleHover}
+                            facebook={this.facebookHover}
+                            logos={this.state.follows}
+                            clear={this.clear}
+                            />
                     </div>)
                 }
             }/>

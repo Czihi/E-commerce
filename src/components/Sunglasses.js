@@ -2,7 +2,17 @@ import React from "react";
 import line from "../images/blueLine.png"
 import Sunglass from "./Sunglass";
 import pinkArrow from "../images/pinkArrow.png"
+import pinkLine from "../images/pinkLineDown.png"
+
 const Sunglasses = () => {
+    function show() {
+        document.getElementById("va").style.width = "150px"
+    }
+
+    function hide() {
+        document.getElementById("va").style.width = "0px"
+    }
+
     return (<div className="sunglassesContainer">
         <h3>Sunglasses</h3>
         <img src={line} alt="line"/>
@@ -27,9 +37,10 @@ const Sunglasses = () => {
             />
         </div>
         <div className="groupViewAll">
-        <h6 className="viewAll">View All Category</h6>
-        <img className="pinkArrow" src={pinkArrow} alt="pinkArrow"/>
+            <h6 onMouseOver={show} onMouseOut={hide} className="viewAll">View All Category</h6>
+            <img className="pinkArrow" src={pinkArrow} alt="pinkArrow"/>
         </div>
+        <img id="va" className="pinkLine" src={pinkLine} alt="pinkLine"/>
         <br/>
         <br/>
     </div>)

@@ -2,14 +2,19 @@ import React from "react";
 import gp from "../images/googlePlusLogo.png"
 import fb from "../images/facebookLogo.png"
 import t from "../images/twitterLogo.png"
-const Follow = () => {
+import gph from "../images/googlePlusLogoHover.png"
+import fbh from "../images/facebookLogoHover.png"
+import th from "../images/twitterLogoHover.png"
+const Follow = (props) => {
+
+    const images={0: t, 1: th, 2: fb, 3: fbh, 4:gp, 5:gph};
     return (<div>
         <h3>Follow us on</h3>
         <hr/>
         <div>
-            <img className="followImage" src={t} alt="t"/>
-            <img className="followImage" src={fb} alt="fb"/>
-            <img className="followImage" src={gp} alt="gp"/>
+            <img onMouseOver={props.twitter} onMouseOut={props.clear} className="followImage" src={images[props.logos[0]]} alt="t"/>
+            <img onMouseOver={props.facebook} onMouseOut={props.clear} className="followImage" src={images[props.logos[1]]} alt="fb"/>
+            <img onMouseOver={props.google}  onMouseOut={props.clear} className="followImage" src={images[props.logos[2]]} alt="gp"/>
         </div>
         <p className="follows"> contact@blackbox.lk</p>
         <p className="follows">Whatsapp - 947 666 85 333</p>

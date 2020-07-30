@@ -5,6 +5,10 @@ import orangeGlass from "../images/orangeGlasses.png"
 import heart from "../images/heart.png"
 
 const Sunglass = (props) => {
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
     function show() {
         document.getElementById(props.id).style.display = "flex";
         document.getElementById("image" + props.id).style.width = "60%";
@@ -28,8 +32,8 @@ const Sunglass = (props) => {
             </div>
         </div>
         <div id={props.id} className="groupBuy">
-            <button className="add">Add to Cart</button>
-            <button className="buy">Buy Now</button>
+            <button  onClick={topFunction} className="add">Add to Cart</button>
+            <button  onClick={topFunction} className="buy">Buy Now</button>
         </div>
     </div>)
 }

@@ -4,37 +4,44 @@
 .introduction{
   height:600px
 }
-.name{
-  font-weight: 800;
-  margin-left: 10%;
-  margin-right: 53%;
-}
+
+
 .groupTopbar{
   margin-top: 3%;
   display:flex;
+  justify-content: space-between;
 
 }
+
 .categories{
   background: none;
-  margin-top: 5px;
+}
+
+.name{
+  font-weight: 800;
+  margin-left: 10%;
+  width: 55%;
+}
+
+.dropdownMenu{
+  width: 5%;
 }
 .cart{
-  height: 40px;
-  width: 40px;
-  margin-left: 3%
+  max-width: 30px;
+  max-height: 30px;
 }
 .loginButton{
-  margin-left: 3%;
-  width:8%;
-  height:40px;
+  width:7%;
+  height:35px;
   border: none;
   background-color: white;
 }
 .dropDown{
-  margin-left: 3%;
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 5%;
 }
+
 .backgroundGradient{
   position: absolute;
   top: 0;
@@ -113,6 +120,8 @@
 
 .bagName{
   max-width: 100%;
+  font-size: calc(-30% + 1vw + 1vh);
+  font-weight: 700;
 }
 
 .bag{
@@ -136,6 +145,7 @@
 }
 .price{
   margin-left: 20%;
+  font-size: calc(-10% + 1vw + 1vh);
   font-weight: 700;
 }
 .heart{
@@ -187,6 +197,8 @@
 
 .sunglassName{
   max-width: 100%;
+  font-size: calc(-30% + 1vw + 1vh);
+  font-weight: 700;
 }
 
 .sunglass{
@@ -215,7 +227,18 @@
 .viewAll{
   color: deeppink;
   text-align: center;
+  cursor: pointer;
 }
+.pinkLine{
+  width: 0px;
+  height: 2px;
+  transition: 0.5s;
+}
+.pinkLine:hover{
+  transition: 0.5s;
+  width: 100%;
+}
+
 
 .promisesContainer{
   padding: 2% 10%;
@@ -322,7 +345,7 @@ input::placeholder{
   height: 50px;
   width: 80%;
   border: none;
-  box-shadow: 0 0 30px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 .registerNow{
   margin-top: 5%;
@@ -344,6 +367,7 @@ input::placeholder{
   color: #aaa
 }
 .followImage{
+  cursor: pointer;
   width:40px;
   margin-right: 10%;
   margin-bottom: 10%;
@@ -368,4 +392,12 @@ input::placeholder{
   font-weight: 600;
   width: 100%;
   height: 60px;
+}
+.link{
+  color: #777;
+  cursor: pointer;
+}
+.link:hover{
+  color: #000;
+  font-weight: bold;
 }
