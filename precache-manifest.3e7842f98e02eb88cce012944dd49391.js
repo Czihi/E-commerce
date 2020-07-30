@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/css/2.adf201ee.chunk.css"
   },
   {
-    "revision": "6de7ed62c05191976637f9ece390121f",
+    "revision": "b0a437cde42060772f6d9962abdc2714",
     "url": "/E-commerce/index.html"
   }
 ];
