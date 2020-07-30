@@ -7,7 +7,7 @@ const Bag=(props)=>{
     const bags={"blue": blueBag, "red": redBag, "grey":greyBag}
     return(<div className="bag">
         <h5 className="bagName">{props.name}</h5>
-        <img src={bags[props.color]} alt={props.color}/>
+        <img className="bagImage" src={bags[props.color]} alt={props.color}/>
         <div className="groupHeartPrice">
         <h6 className="price">{props.price}</h6>
         <img className="heart" src={heart} alt="fav"/>

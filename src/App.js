@@ -10,6 +10,7 @@ import Search from "./components/Search";
 import Video from "./components/Video";
 import Bags from "./components/Bags";
 import Sunglasses from "./components/Sunglasses";
+import PromisePanel from "./components/PromisePanel";
 
 class App extends Component {
     render() {
@@ -36,10 +37,12 @@ class App extends Component {
                             <Sunglasses/>
                         </div>
 
+                            <PromisePanel/>
+
                     </div>)
                 }
             }/>
-    </Router>)
+        </Router>)
     }
 }
 
