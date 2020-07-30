@@ -8,6 +8,7 @@ const Search = ()=>{
             <img className="searchLine" src={pinkLine} alt="pl"/>
             <input className="searchInput" placeholder="Search Your Product..."/>
             <img className="searchIcon" src={search} alt="search"/>
+
         </div>
     )
 };

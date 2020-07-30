@@ -123,6 +123,7 @@
   margin-top: 2%;
   margin-bottom: 5%;
   padding: 20px;
+  transition: 0.5s;
 }
 .bag:hover{
   transform: scale(1.1);
@@ -187,6 +188,7 @@
   margin-top: 2%;
   margin-bottom: 5%;
   padding: 20px;
+  transition: 0.5s;
 }
 .sunglass:hover{
   transform: scale(1.1);
@@ -218,6 +220,7 @@
   margin-top: 5%;
   display:flex;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 .title{
   margin-top: 7%;
@@ -227,6 +230,7 @@
   max-width: 25%;
   position: relative;
   padding: 2% 3%;
+  transition: 0.5s;
 }
 .promise:hover{
   background-color: #ffffff;
@@ -250,4 +254,90 @@
   display: flex;
   justify-content: center;
   width: 75%;
+}
+
+.brandsContainer{
+  text-align: center;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.blueLine{
+  margin-bottom: 5%;
+}
+.brands{
+  display:flex;
+  justify-content: space-between;
+}
+
+.brandsContainerTitle{
+  font-weight: 700;
+}
+
+.brand{
+  max-width: 25%;
+  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 3%;
+}
+.brandImage{
+  filter: brightness(10%);
+  transform: scale(1);
+  transition: 0.4s;
+}
+.brandImage:hover{
+  filter : brightness(100%);
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.groupEnding{
+  max-width: 90%;
+  margin: 5%;
+  display:flex;
+  justify-content: space-between;
+}
+.horLine{
+  border-top: 3px solid rgba(0, 0, 0, 0.08);
+}
+
+.mailGroup{
+  margin-top: 5%;
+  height: 50px;
+}
+input::placeholder{
+  color: #ccc;
+}
+.mailInput{
+  font-weight: 700;
+  text-indent:40px;
+  height: 50px;
+  width: 80%;
+  border: none;
+  box-shadow: 0 0 30px #ccc;
+}
+.registerNow{
+  margin-top: 5%;
+  color: #aaa
+}
+.appImg{
+  margin-top: 5%;
+  margin-right: 3%;
+  width: 100px;
+}
+.groupApp{
+  display: flex;
+}
+.follows{
+  color: #aaa
+}
+.copyright{
+  text-align: center;
+  color: #aaa
+}
+.followImage{
+  width:40px;
+  margin-right: 10%;
+  margin-bottom: 10%;
 }

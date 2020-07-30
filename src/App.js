@@ -11,6 +11,8 @@ import Video from "./components/Video";
 import Bags from "./components/Bags";
 import Sunglasses from "./components/Sunglasses";
 import PromisePanel from "./components/PromisePanel";
+import BrandDiv from "./components/BrandDiv";
+import EndingSection from "./components/EndingSection";
 
 class App extends Component {
     render() {
@@ -38,7 +40,8 @@ class App extends Component {
                         </div>
 
                             <PromisePanel/>
-
+                            <BrandDiv/>
+                            <EndingSection/>
                     </div>)
                 }
             }/>
