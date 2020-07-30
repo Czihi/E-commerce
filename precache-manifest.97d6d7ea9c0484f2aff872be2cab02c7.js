@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/blueHandbag.5013028d.png"
   },
   {
-    "revision": "f8f1dbafcfccb5cb3d0a",
-    "url": "/E-commerce/static/css/main.29def084.chunk.css"
+    "revision": "009531850ebb9f884396",
+    "url": "/E-commerce/static/css/main.a331afb4.chunk.css"
   },
   {
     "revision": "3c3848a61e768f552efe",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/orangeGlasses.1c67234e.png"
   },
   {
-    "revision": "0435279933e411e19e1c",
-    "url": "/E-commerce/static/js/2.dcbeca8a.chunk.js"
+    "revision": "14939764fe4008958b51",
+    "url": "/E-commerce/static/js/2.30617cf8.chunk.js"
   },
   {
     "revision": "011571568eff03e1fba50f0212ed83c4",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/mainLogoBackground.6ef2f8b6.png"
   },
   {
-    "revision": "f8f1dbafcfccb5cb3d0a",
-    "url": "/E-commerce/static/js/main.e8891cb3.chunk.js"
+    "revision": "009531850ebb9f884396",
+    "url": "/E-commerce/static/js/main.0ff91a1f.chunk.js"
   },
   {
     "revision": "07587df4534278c3a5a3b4f390dfdbd6",
@@ -48,11 +48,11 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/greenGlasses.7bf789dd.png"
   },
   {
-    "revision": "0435279933e411e19e1c",
+    "revision": "14939764fe4008958b51",
     "url": "/E-commerce/static/css/2.adf201ee.chunk.css"
   },
   {
-    "revision": "a555b766fbfd0d53b211fb9ec797eced",
+    "revision": "6de7ed62c05191976637f9ece390121f",
     "url": "/E-commerce/index.html"
   }
 ];
