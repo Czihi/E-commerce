@@ -142,7 +142,8 @@
 
 .products{
   padding-top: 20px;
-  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   max-width: 80%;
   box-shadow: 0 0 30px #ccc;;
 }
