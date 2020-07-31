@@ -507,12 +507,17 @@ input::placeholder{
     font-size: 13px;
   }
   .bagName{
-    font-size: 15px;
+    font-size: 13px;
   }
   .sunglassName{
-    font-size: 15px;
+    font-size: 13px;
   }
-
+  .bagImage{
+    margin-bottom: 40%;
+  }
+  .sunglassesImage {
+    margin-bottom: 40%;
+  }
   .promises{
     display: block;
   }
@@ -552,5 +557,12 @@ input::placeholder{
   }
   .dropDown{
     margin-left: 10%;
+  }
+  .heart{
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .price{
+    font-size: 13px;
   }
 }

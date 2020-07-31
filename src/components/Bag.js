@@ -12,7 +12,7 @@ const Bag = (props) => {
     function show() {
         document.getElementById(props.id).style.display = "flex";
         document.getElementById("image" + props.id).style.width = "60%";
-        document.getElementById("gh" + props.id).style.bottom = "20%"
+        document.getElementById("gh" + props.id).style.bottom = "10%"
     }
 
     function hide() {
