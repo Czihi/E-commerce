@@ -259,7 +259,7 @@ font-size:calc(1vw + 1vh);
   margin-bottom: 7%;
 }
 .promise{
-  max-width: 25%;
+  max-width: 50%;
   position: relative;
   padding: 2% 3%;
   transition: 0.5s;
@@ -276,7 +276,6 @@ font-size:calc(1vw + 1vh);
 }
 
 .knowMore{
-  font-size:calc(0.75vw + 0.75vh);
   color: deeppink;
   text-align: center;
 }
@@ -366,7 +365,7 @@ input::placeholder{
   width: 100px;
 }
 .groupApp{
-
+ display: flex;
 }
 .follows{
   color: #aaa;
@@ -418,4 +417,140 @@ input::placeholder{
 .link:hover{
   color: #000;
   font-weight: bold;
+}
+.promises2{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1300px){
+  .name{
+    width:15%
+  }
+
+  .mailInput{
+    height: 30px;
+    font-size: 15px;
+  }
+  .mailInput{
+    height: 30px;
+    font-size: 15px;
+  }
+  .searchInput{
+    height: 30px;
+    font-size: 15px;
+  }
+  .searchLine{
+    margin-top: 3px;
+    height: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .bags{
+    display: block;
+  }
+  .bag{
+    margin: 15%;
+    max-width: 70%;
+  }
+
+  .sunglasses{
+    display: block;
+  }
+  .sunglass{
+    margin: 15%;
+    max-width: 70%;
+  }
+  .buy{
+    font-size: 13px;
+    height: 30px;
+  }
+  .add{
+    height: 30px;
+    font-size: 13px;
+  }
+  .groupEnding{
+    display: block
+  }
+  .follows{
+    max-width: 70%;
+    font-size: 13px;
+  }
+  .copyright{
+    font-size: 13px;
+  }
+  .link{
+    font-size: 13px;
+  }
+  .responsiveTitle{
+    font-size: 20px;
+  }
+  .searchInput{
+    margin-top: 15%;
+    font-size: 15px;
+    width: 80%;
+  }
+  .searchLine{
+    margin-top: 3px;
+  }
+  .groupVideo{
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+  .searchIcon{
+    right: 8%;
+  }
+  .mailInput{
+    font-size: 15px;
+    width: 50%;
+  }
+  .registerNow{
+    font-size: 13px;
+  }
+  .bagName{
+    font-size: 15px;
+  }
+  .sunglassName{
+    font-size: 15px;
+  }
+
+  .promises{
+    display: block;
+  }
+  .promise{
+    margin: 3%;
+    max-width: 44%;
+  }
+  .desc{
+    font-size: 13px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .promiseImage{
+    max-width: none;
+    max-height: none;
+  }
+  .introduction{
+    height: 300px;
+  }
+  .groupKnowMore{
+    bottom: 0;
+  }
+  .groupTopbar{
+    display: block;
+  }
+  .dropdownMenu{
+    margin-bottom: 5%;
+    margin-left: 10%;
+  }
+  .cart{
+    margin-left: 10%;
+  }
+  .loginButton{
+    margin-left: 5%;
+    width: 20%
+  }
+  .dropDown{
+    margin-left: 10%;
+  }
 }

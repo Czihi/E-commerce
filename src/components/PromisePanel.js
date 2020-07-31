@@ -9,6 +9,7 @@ const PromisePanel = () =>{
         <h3>What we promise ?</h3>
         <img src={line} alt="line"/>
         <div className="promises">
+            <div className="promises2">
         <Promise
             title="Black Box Trust"
             src="bbt"
@@ -19,6 +20,8 @@ const PromisePanel = () =>{
             src="swc"
             desc="At Black Box, we provide 100% assurance. If you have any issue, your money is immediately refunded."
         />
+            </div>
+                <div className="promises2">
         <Promise
             title="Our Promise"
             src="op"
@@ -29,6 +32,7 @@ const PromisePanel = () =>{
                 src="fd"
                 desc="Next day FREE delivery available for most of our products."
             />
+                </div>
         </div>
     </div>)
 };
