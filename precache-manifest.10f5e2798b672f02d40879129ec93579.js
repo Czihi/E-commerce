@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/blueHandbag.5013028d.png"
   },
   {
-    "revision": "c2bd5da4250240c48c80",
-    "url": "/E-commerce/static/css/main.15ed57ba.chunk.css"
+    "revision": "be998f140b363a357a6e",
+    "url": "/E-commerce/static/css/main.60377cbf.chunk.css"
   },
   {
     "revision": "3c3848a61e768f552efe",
@@ -28,31 +28,31 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/mainLogoBackground.6ef2f8b6.png"
   },
   {
-    "revision": "c2bd5da4250240c48c80",
-    "url": "/E-commerce/static/js/main.2c0ebb78.chunk.js"
+    "revision": "be998f140b363a357a6e",
+    "url": "/E-commerce/static/js/main.e586d9eb.chunk.js"
   },
   {
-    "revision": "07587df4534278c3a5a3b4f390dfdbd6",
-    "url": "/E-commerce/static/media/redHandbag.07587df4.png"
+    "revision": "253c8036a0e63971c5cdcdd0229c4219",
+    "url": "/E-commerce/static/media/redHandbag.253c8036.png"
   },
   {
-    "revision": "f5812db1075c5db19f5396cb65c1873c",
-    "url": "/E-commerce/static/media/grayHandbag.f5812db1.png"
+    "revision": "5dc1d99737cbf1155e477735f9b4c0b8",
+    "url": "/E-commerce/static/media/grayHandbag.5dc1d997.png"
   },
   {
     "revision": "52f98c65fb61e1f488689ca4e8098800",
     "url": "/E-commerce/static/media/blueGlasses.52f98c65.png"
   },
   {
-    "revision": "7bf789ddb1ccb78eb31eee9a7c1630e8",
-    "url": "/E-commerce/static/media/greenGlasses.7bf789dd.png"
+    "revision": "f5d28cbc9daf43a4c5343ba8d4203ddb",
+    "url": "/E-commerce/static/media/greenGlasses.f5d28cbc.png"
   },
   {
     "revision": "14939764fe4008958b51",
     "url": "/E-commerce/static/css/2.adf201ee.chunk.css"
   },
   {
-    "revision": "601f47c803e813a651095c17edcd7f05",
+    "revision": "775e80593eed6a6cf9be36ba8b4941d9",
     "url": "/E-commerce/index.html"
   }
 ];
