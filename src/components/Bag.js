@@ -10,15 +10,12 @@ const Bag = (props) => {
         document.documentElement.scrollTop = 0;
     }
     function show() {
-        document.getElementById(props.id).style.display = "flex";
-        document.getElementById("image" + props.id).style.width = "60%";
-        document.getElementById("gh" + props.id).style.bottom = "10%"
+        document.getElementById(props.id).style.opacity = "1";
     }
 
     function hide() {
-        document.getElementById(props.id).style.display = "none";
-        document.getElementById("image" + props.id).style.width = "80%";
-        document.getElementById("gh" + props.id).style.bottom = "5%"
+        document.getElementById(props.id).style.opacity = "0";
+
     }
 
     const bags = {"blue": blueBag, "red": redBag, "grey": greyBag};
@@ -27,7 +24,7 @@ const Bag = (props) => {
             <p className="bagName">{props.name}</p>
             <img id={"image" + props.id} className="bagImage" src={bags[props.color]} alt={props.color}/>
             <div id={"gh" + props.id} className="groupHeartPrice">
-                <p className="price">{props.price}</p>
+                <div className="price">{props.price}</div>
                 <img className="heart" src={heart} alt="fav"/>
             </div>
         </div>

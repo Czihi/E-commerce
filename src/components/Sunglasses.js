@@ -14,8 +14,8 @@ const Sunglasses = () => {
     }
 
     return (<div className="sunglassesContainer">
-        <h3>Sunglasses</h3>
-        <img src={line} alt="line"/>
+        <p className="sunglasses__title">Sunglasses</p>
+        <img className="blueLine" src={line} alt="line"/>
         <div className="sunglasses">
             <Sunglass
                 name="UV protected oval wayfarer unisex sunglasses"

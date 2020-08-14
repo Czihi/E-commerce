@@ -10,24 +10,20 @@ const Sunglass = (props) => {
         document.documentElement.scrollTop = 0;
     }
     function show() {
-        document.getElementById(props.id).style.display = "flex";
-        document.getElementById("image" + props.id).style.width = "60%";
-        document.getElementById("gh" + props.id).style.bottom = "20%"
+        document.getElementById(props.id).style.opacity="1"
     }
 
     function hide() {
-        document.getElementById(props.id).style.display = "none";
-        document.getElementById("image" + props.id).style.width = "80%";
-        document.getElementById("gh" + props.id).style.bottom = "5%"
+        document.getElementById(props.id).style.opacity="0"
     }
 
     const bags = {"blue": blueGlass, "green": greenGlass, "orange": orangeGlass};
     return (<div onMouseOver={show} onMouseOut={hide} className="sunglass">
         <div className="normalGlasses">
-            <h5 className="sunglassName">{props.name}</h5>
+            <p className="sunglassName">{props.name}</p>
             <img id={"image" + props.id} className="sunglassesImage" src={bags[props.color]} alt={props.color}/>
             <div id={"gh" + props.id} className="groupHeartPrice">
-                <h6 className="price">{props.price}</h6>
+                <div className="price">{props.price}</div>
                 <img className="heart" src={heart} alt="fav"/>
             </div>
         </div>

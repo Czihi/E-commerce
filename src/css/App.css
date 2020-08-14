@@ -2,7 +2,7 @@
   display: flex;
 }
 .introduction{
-  height:600px
+  height:40vw
 }
 
 
@@ -116,44 +116,49 @@
 
 .bags{
   display:flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .bagName{
-  max-width: 100%;
-  font-size: calc(-30% + 1vw + 1vh);
-  font-weight: 700;
+  flex: 1 1;
+  font-size: calc(0.8vw + 0.8vh);
+  font-weight: 600;
 }
 
+.line{
+  margin-bottom: 3%;
+}
 .bag{
-  position: relative;
- max-width: 30%;
+  margin: 0 2%;
+  flex: 1 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   box-shadow: 0 0 30px #ccc;
-  margin-top: 2%;
-  margin-bottom: 5%;
   transition: 0.2s;
 }
 .bag:hover{
-  transform: scale(1.1);
   box-shadow: 0 0 40px #ccc;
+  transform: scale(1.05);
   transition: 0.2s;
 }
 .normalBag{
-  padding: 20px;
+  text-align: center;
+  flex: 10 1;
+  padding: 15px 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column
 }
 .normalGlasses{
-  padding: 20px;
+  text-align: center;
+  flex: 10 1;
+  padding: 15px 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column
 }
-.price{
-  margin-left: 20%;
-  font-size: calc(-10% + 1vw + 1vh);
-  font-weight: 700;
-}
-.heart{
- margin-left: 20%;
-  max-height: 2vw;
-  max-width: 2vw;
-}
+
 
 .products{
   padding-top: 20px;
@@ -165,24 +170,33 @@
 }
 
 .groupHeartPrice{
-  transition: 0.2s;
-  position:absolute;
-  bottom: 5%;
+  flex:1 1;
   display: flex;
-  justify-content: center;
-  width: 80%;
+  flex-wrap: wrap;
+}
+.price{
+  flex: 1 1;
+  font-size: calc(0.8vh + 0.8vw);
+  font-weight: 600;
+}
+.heart{
+  flex: 1 1;
+  max-width: 20px;
+  max-height: 20px;
 }
 .bagImage{
+  flex: 5 1;
   transition: 0.2s;
-   width: 80%;
-   height: auto;
-   margin-bottom: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
  }
 .sunglassesImage{
-  width: 80%;
+  flex: 5 1;
   transition: 0.2s;
-  height: auto;
-  margin-bottom: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
 }
 .sunglassesContainer{
   text-align: center;
@@ -193,29 +207,40 @@
 
 .sunglasses{
   display:flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .sunglassName{
-  max-width: 100%;
-  font-size: calc(-30% + 1vw + 1vh);
-  font-weight: 700;
+  flex: 1 1;
+  font-size: calc(0.8vw + 0.8vh);
+  font-weight: 600;
 }
 
 .sunglass{
-  position: relative;
-  max-width: 30%;
+  margin: 0 2%;
+  flex: 1 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   box-shadow: 0 0 30px #ccc;
-  margin-top: 2%;
-  margin-bottom: 5%;
   transition: 0.2s;
 }
 .sunglass:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 0 40px #ccc;
   transition: 0.2s;
 }
+.sunglasses__title{
+  margin-top: 2%;
+  font-size: calc(1.3vw + 1.3vh);
+  font-weight: 600;
+}
+.bags__title{
+  font-size: calc(1.3vw + 1.3vh);
+  font-weight: 600;
+}
 .groupViewAll{
+  margin-top: 3%;
   display: flex;
   justify-content: center;
 }
@@ -262,16 +287,16 @@ font-size:calc(1vw + 1vh);
   max-width: 50%;
   position: relative;
   padding: 2% 3%;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .promise:hover{
   background-color: #ffffff;
-  transition: 0.5s;
+  transition: 0.2s;
   box-shadow: 0 0 50px #ccc;
-  border-bottom: deeppink solid 3px;
+  border-bottom: deeppink solid 2px;
 }
 .desc{
-  font-size:  min(1vw,13px);
+  font-size:  calc(0.55vw + 0.55vh);
   margin-bottom: 30%;
 }
 
@@ -285,7 +310,8 @@ font-size:calc(1vw + 1vh);
   bottom: 5%;
   display: flex;
   justify-content: center;
-  width: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .brandsContainer{
@@ -316,13 +342,13 @@ font-size:calc(1vw + 1vh);
 .brandImage{
   filter: brightness(10%);
   transform: scale(1);
-  transition: 0.4s;
+  transition: 0.3s;
   width: 100%;
   height: auto;
 }
 .brandImage:hover{
   filter : brightness(100%);
-  transition: 0.4s;
+  transition: 0.3s;
   transform: scale(1.2);
 }
 
@@ -386,27 +412,26 @@ input::placeholder{
   margin-bottom: 10%;
 }
 .groupBuy{
-  position:absolute;
-  bottom: 0;
-  transition: 0.5s;
-  display: none;
-  width: 100%;
-  height:auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1;
+  transition: 0.2s;
+  opacity: 0;
 }
 .add{
+  flex: 1 1 30px;
   font-size:  calc(-30% + 1vw + 1vh);
   border: solid 1px #ddd;
   background-color: white;
-  width: 100%;
   height: 3vw;
 }
 .buy{
+  flex: 1 1 30px;
   font-size:  calc(-30% + 1vw + 1vh);;
   border: solid 0;
   background-color: deeppink;
   color: white;
   font-weight: 600;
-  width: 100%;
   height: 3vw
 }
 .link{
@@ -423,6 +448,15 @@ input::placeholder{
   justify-content: space-between;
 }
 @media (max-width: 1300px){
+  .products{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    max-width: 90%;
+  }
+  .knowMore{
+    font-size: 13px;
+  }
   .name{
     width:15%
   }
@@ -443,22 +477,28 @@ input::placeholder{
     margin-top: 3px;
     height: 32px;
   }
+  .heart{
+    max-height: 10px;
+    max-width: 10px;
+  }
 }
 @media (max-width: 600px) {
   .bags{
     display: block;
   }
   .bag{
-    margin: 15%;
-    max-width: 70%;
+    display: block;
+    margin: 5%;
+    max-width: 90%;
   }
 
   .sunglasses{
     display: block;
   }
   .sunglass{
-    margin: 15%;
-    max-width: 70%;
+    display:block;
+    margin: 5%;
+    max-width: 90%;
   }
   .buy{
     font-size: 13px;
@@ -512,12 +552,6 @@ input::placeholder{
   .sunglassName{
     font-size: 13px;
   }
-  .bagImage{
-    margin-bottom: 40%;
-  }
-  .sunglassesImage {
-    margin-bottom: 40%;
-  }
   .promises{
     display: block;
   }
@@ -536,7 +570,7 @@ input::placeholder{
     max-height: none;
   }
   .introduction{
-    height: 300px;
+    height: 350px;
   }
   .groupKnowMore{
     bottom: 0;
@@ -559,10 +593,10 @@ input::placeholder{
     margin-left: 10%;
   }
   .heart{
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 20px;
+    max-height: 20px;
   }
   .price{
-    font-size: 13px;
-  }
+    font-size: 15px;
+}
 }

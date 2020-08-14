@@ -4,8 +4,8 @@ import Bag from "./Bag";
 
 const Bags = () => {
     return (<div className="bagContainer">
-        <h3>Handbags</h3>
-        <img src={line} alt="line"/>
+        <p className="bags__title">Handbags</p>
+        <img className="line" src={line} alt="line"/>
         <div className="bags">
             <Bag
                 name="Fostelo Women's Shoulder Bei..."

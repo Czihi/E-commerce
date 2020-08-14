@@ -10,6 +10,7 @@ const Topbar = () =>{
         <img className="cart" src={cart} alt="cart"/>
         <button className="loginButton">Login</button>
         <img className="dropDown" src={dropdownMenu} alt="dropdown"/>
+
     </div>)
 }
 export default Topbar;
