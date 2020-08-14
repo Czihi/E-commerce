@@ -307,6 +307,7 @@ font-size:calc(1vw + 1vh);
 
 .groupKnowMore{
   position:absolute;
+  width: 100%;
   bottom: 5%;
   display: flex;
   justify-content: center;
@@ -455,6 +456,7 @@ input::placeholder{
     max-width: 90%;
   }
   .knowMore{
+    margin-top: 3px;
     font-size: 13px;
   }
   .name{
