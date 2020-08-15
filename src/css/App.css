@@ -183,6 +183,7 @@
 }
 .heart{
   flex: 1 1;
+  cursor: pointer;
   max-width: 20px;
   max-height: 20px;
 }
@@ -453,6 +454,7 @@ input::placeholder{
 }
 
 .left{
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   right:98.5%;
@@ -461,6 +463,7 @@ input::placeholder{
   box-shadow: 5px 5px 5px #aaa;
 }
 .right{
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   left:98.5%;
@@ -469,6 +472,7 @@ input::placeholder{
   box-shadow: 5px 5px 5px #aaa;
 }
 .sunglasses__left{
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   right: 104%;
@@ -477,6 +481,7 @@ input::placeholder{
   box-shadow: 5px 5px 5px #aaa;
 }
 .sunglasses__right{
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   left: 104%;
