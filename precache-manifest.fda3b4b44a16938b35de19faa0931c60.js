@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/blueHandbag.5013028d.png"
   },
   {
-    "revision": "9af2460ef1340c7d26fd",
-    "url": "/E-commerce/static/css/main.c9b557d0.chunk.css"
+    "revision": "ebda7130ff7a1e86a468",
+    "url": "/E-commerce/static/css/main.57b0d14f.chunk.css"
   },
   {
     "revision": "3c3848a61e768f552efe",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/media/mainLogoBackground.6ef2f8b6.png"
   },
   {
-    "revision": "9af2460ef1340c7d26fd",
+    "revision": "ebda7130ff7a1e86a468",
     "url": "/E-commerce/static/js/main.93030881.chunk.js"
   },
   {
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/E-commerce/static/css/2.adf201ee.chunk.css"
   },
   {
-    "revision": "748291d9f97dfa019d6244105d549637",
+    "revision": "a4ac581496418924670da934a5672f00",
     "url": "/E-commerce/index.html"
   }
 ];
