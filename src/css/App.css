@@ -161,6 +161,7 @@
 
 
 .products{
+  position: relative;
   padding-top: 20px;
   margin-top:10%;
   margin-left: 10%;
@@ -170,6 +171,7 @@
 }
 
 .groupHeartPrice{
+  transition: 0.2s;
   flex:1 1;
   display: flex;
   flex-wrap: wrap;
@@ -199,6 +201,7 @@
   width: 70%;
 }
 .sunglassesContainer{
+  position: relative;
   text-align: center;
   max-width: 90%;
   margin-left: 5%;
@@ -422,9 +425,9 @@ input::placeholder{
 .add{
   flex: 1 1 30px;
   font-size:  calc(-30% + 1vw + 1vh);
-  border: solid 1px #ddd;
+  border: solid 2px #ddd;
   background-color: white;
-  height: 3vw;
+  height: 4vw;
 }
 .buy{
   flex: 1 1 30px;
@@ -433,7 +436,7 @@ input::placeholder{
   background-color: deeppink;
   color: white;
   font-weight: 600;
-  height: 3vw
+  height: 4vw
 }
 .link{
   color: #777;
@@ -448,7 +451,58 @@ input::placeholder{
   display: flex;
   justify-content: space-between;
 }
+
+.left{
+  position: absolute;
+  z-index: 1;
+  right:98.5%;
+  top: 30%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.right{
+  position: absolute;
+  z-index: 1;
+  left:98.5%;
+  top: 30%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.sunglasses__left{
+  position: absolute;
+  z-index: 1;
+  right: 104%;
+  top:47%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.sunglasses__right{
+  position: absolute;
+  z-index: 1;
+  left: 104%;
+  top:47%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+
 @media (max-width: 1300px){
+  .left{
+    right:97%;
+    top: 27%;
+  }
+  .right{
+    left:97%;
+    top: 27%;
+  }
+  .sunglasses__left{
+  right: 102%;
+  top: 40%;
+  }
+  .sunglasses__right{
+ left: 102%;
+    top: 40%;
+  }
   .products{
     margin-left: 5%;
     margin-right: 5%;
@@ -479,10 +533,6 @@ input::placeholder{
     margin-top: 3px;
     height: 32px;
   }
-  .heart{
-    max-height: 10px;
-    max-width: 10px;
-  }
 }
 @media (max-width: 600px) {
   .bags{
@@ -504,10 +554,10 @@ input::placeholder{
   }
   .buy{
     font-size: 13px;
-    height: 30px;
+    height: 50px;
   }
   .add{
-    height: 30px;
+    height: 50px;
     font-size: 13px;
   }
   .groupEnding{
@@ -601,4 +651,10 @@ input::placeholder{
   .price{
     font-size: 15px;
 }
+  .left{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
 }

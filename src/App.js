@@ -15,20 +15,31 @@ import BrandDiv from "./components/BrandDiv";
 import EndingSection from "./components/EndingSection";
 
 class App extends Component {
-    state={
-      follows : [0, 2, 4]
+    state = {
+        follows: [0, 2, 4],
+        heartIcon: ["heart", "heart", "heart", "heart", "heart", "heart"]
     };
-    clear=()=>{
-        this.setState({follows:[0, 2, 4]})
+    clear = () => {
+        this.setState({follows: [0, 2, 4]})
     };
-    twitterHover=()=>{
-      this.setState({follows:[1, 2, 4]})
+    twitterHover = () => {
+        this.setState({follows: [1, 2, 4]})
     };
-    facebookHover=()=>{
-        this.setState({follows:[0, 3, 4]})
+    facebookHover = () => {
+        this.setState({follows: [0, 3, 4]})
     };
-    googleHover=()=>{
-        this.setState({follows:[0, 2, 5]})
+    googleHover = () => {
+        this.setState({follows: [0, 2, 5]})
+    };
+    clickHeart = (index) => {
+        let newHeartIcon = [...this.state.heartIcon];
+        if (this.state.heartIcon[index] === "heart") {
+            newHeartIcon[index] = "heartClicked";
+            this.setState({heartIcon: newHeartIcon})
+        } else {
+            newHeartIcon[index] = "heart";
+            this.setState({heartIcon: newHeartIcon})
+        }
     };
 
     render() {
@@ -50,19 +61,25 @@ class App extends Component {
                             />
                         </div>
                         <div className="products">
-                            <Bags/>
-                            <Sunglasses/>
+                            <Bags
+                                clickHeart={this.clickHeart}
+                                heartIcon={this.state.heartIcon}
+                            />
+                            <Sunglasses
+                                clickHeart={this.clickHeart}
+                                heartIcon={this.state.heartIcon}
+                            />
                         </div>
 
-                            <PromisePanel/>
-                            <BrandDiv/>
-                            <EndingSection
+                        <PromisePanel/>
+                        <BrandDiv/>
+                        <EndingSection
                             twitter={this.twitterHover}
                             google={this.googleHover}
                             facebook={this.facebookHover}
                             logos={this.state.follows}
                             clear={this.clear}
-                            />
+                        />
                     </div>)
                 }
             }/>

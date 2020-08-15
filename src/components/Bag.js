@@ -3,8 +3,9 @@ import blueBag from "../images/blueHandbag.png"
 import redBag from "../images/redHandbag.png"
 import greyBag from "../images/grayHandbag.png"
 import heart from "../images/heart.png"
-
+import heartClicked from "../images/heartClicked.png"
 const Bag = (props) => {
+    const heartIcons={"heart": heart, "heartClicked": heartClicked}
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -25,7 +26,7 @@ const Bag = (props) => {
             <img id={"image" + props.id} className="bagImage" src={bags[props.color]} alt={props.color}/>
             <div id={"gh" + props.id} className="groupHeartPrice">
                 <div className="price">{props.price}</div>
-                <img className="heart" src={heart} alt="fav"/>
+                <img onClick={props.clickHeart} className="heart" src={heartIcons[props.heartIcon]} alt="fav"/>
             </div>
         </div>
         <div id={props.id} className="groupBuy">

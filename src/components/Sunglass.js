@@ -3,8 +3,10 @@ import blueGlass from "../images/blueGlasses.png"
 import greenGlass from "../images/greenGlasses.png"
 import orangeGlass from "../images/orangeGlasses.png"
 import heart from "../images/heart.png"
+import heartClicked from "../images/heartClicked.png";
 
 const Sunglass = (props) => {
+    const heartIcons={"heart": heart, "heartClicked": heartClicked}
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -24,7 +26,7 @@ const Sunglass = (props) => {
             <img id={"image" + props.id} className="sunglassesImage" src={bags[props.color]} alt={props.color}/>
             <div id={"gh" + props.id} className="groupHeartPrice">
                 <div className="price">{props.price}</div>
-                <img className="heart" src={heart} alt="fav"/>
+                <img onClick={props.clickHeart} className="heart" src={heartIcons[props.heartIcon]} alt="fav"/>
             </div>
         </div>
         <div id={props.id} className="groupBuy">
