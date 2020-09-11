@@ -48,7 +48,7 @@ class App extends Component {
                 () => {
 
                     document.title = "Blackbox";
-                    return (<div>
+                    return (<div className="smooth">
                         <div className="backgroundGradient">
 
                         </div>

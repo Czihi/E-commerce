@@ -7,10 +7,13 @@ const Topbar = () =>{
     return(<div className="groupTopbar">
         <h3 className="name">Blackbox.lk</h3>
         <DropDownPart/>
-        <img className="cart" src={cart} alt="cart"/>
+        <div className="cart">
+        <img className="cart__image" src={cart} alt="cart" unselectable={true} draggable={false}/>
+        <div className="cart__number">1</div>
+        </div>
         <button className="loginButton">Login</button>
-        <img className="dropDown" src={dropdownMenu} alt="dropdown"/>
+        <img className="dropDown" src={dropdownMenu} alt="dropdown" unselectable={true} draggable={false}/>
 
     </div>)
-}
+};
 export default Topbar;

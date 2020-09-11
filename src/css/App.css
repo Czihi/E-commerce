@@ -1,671 +1,803 @@
-.group{
-  display: flex;
-}
-.introduction{
-  height:40vw
+html{
+  scroll-behavior: smooth;
 }
 
-
-.groupTopbar{
-  margin-top: 3%;
-  display:flex;
-  justify-content: space-between;
-
+.group {
+    display: flex;
 }
 
-.categories{
-  background: none;
+.introduction {
+    height: 40vw
 }
 
-.name{
-  font-weight: 800;
-  margin-left: 10%;
-  width: 55%;
+.groupTopbar {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.dropdownMenu{
-  width: 5%;
-}
-.cart{
-  max-width: 30px;
-  max-height: 30px;
-}
-.loginButton{
-  width:7%;
-  height:35px;
-  border: none;
-  background-color: white;
-}
-.dropDown{
-  max-width: 40px;
-  max-height: 40px;
-  margin-right: 5%;
+.categories {
+    background: none;
 }
 
-.backgroundGradient{
+.name {
+    font-weight: 800;
+    margin-left: 10%;
+    flex: 5 1;
+}
+
+.dropdownMenu {
+  margin-right: 1vw;
+    flex: 1 1;
+}
+.cart {
+  flex: 0.5 1;
+  position: relative;
+  max-width: 5vw;
+}
+.cart__image {
+    max-width: calc(2vw + 2vh);
+    height: auto;
+}
+.cart__number{
+  text-align: center;
   position: absolute;
+  font-size: calc(0.5vw + 0.5vh);
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to right bottom, #b6f2c6 0%, white 40%);
-  z-index:-3
-}
-.background{
-  position: absolute;
-
-  width:50%;
-  height: auto;
-  right:0;
-  top:0;
-  z-index: -2
-}
-
-
-
-.searchGroup{
-  margin-top: 5%;
-  margin-left: 10%;
-  height: 50px;
-}
-.searchInput{
-  font-weight: 900;
-  text-indent:40px;
-  height:  50px;
-  font-size:  calc(-38% + 1vw + 1vh);
-  width: 40%;
-  border: none;
-  box-shadow: 0 0 30px #ccc;
-}
-.searchLine{
-  -webkit-user-drag: none;
-  position:relative;
-  left:6px;
-  width:10px;
-  height: 52px;
-  margin-bottom: 5px;
-
-}
-.searchIcon{
-  position: relative;
-  right:3%;
-  -webkit-user-drag: none;
-  cursor: pointer;
-}
-.pinkCircle{
-  margin-right: 2%;
-}
-
-.groupVideo{
-  margin-left: 11%;
-  margin-top: 3%
-}
-
-.watchVideo{
-  font-weight: 800;
-  display: inline;
-  color: grey;
-}
-
-.bagContainer{
-  text-align: center;
-  max-width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.bags{
-  display:flex;
-  flex-wrap: wrap;
-}
-
-.bagName{
-  flex: 1 1;
-  font-size: calc(0.8vw + 0.8vh);
-  font-weight: 600;
-}
-
-.line{
-  margin-bottom: 3%;
-}
-.bag{
-  margin: 0 2%;
-  flex: 1 1;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  box-shadow: 0 0 30px #ccc;
-  transition: 0.2s;
-}
-.bag:hover{
-  box-shadow: 0 0 40px #ccc;
-  transform: scale(1.05);
-  transition: 0.2s;
-}
-.normalBag{
-  text-align: center;
-  flex: 10 1;
-  padding: 15px 15px 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column
-}
-.normalGlasses{
-  text-align: center;
-  flex: 10 1;
-  padding: 15px 15px 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column
-}
-
-
-.products{
-  position: relative;
-  padding-top: 20px;
-  margin-top:10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  max-width: 80%;
-  box-shadow: 0 0 30px #ccc;;
-}
-
-.groupHeartPrice{
-  transition: 0.2s;
-  flex:1 1;
-  display: flex;
-  flex-wrap: wrap;
-}
-.price{
-  flex: 1 1;
-  font-size: calc(0.8vh + 0.8vw);
-  font-weight: 600;
-}
-.heart{
-  flex: 1 1;
-  cursor: pointer;
-  max-width: 20px;
-  max-height: 20px;
-}
-.bagImage{
-  flex: 5 1;
-  transition: 0.2s;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
- }
-.sunglassesImage{
-  flex: 5 1;
-  transition: 0.2s;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
-}
-.sunglassesContainer{
-  position: relative;
-  text-align: center;
-  max-width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.sunglasses{
-  display:flex;
-  flex-wrap: wrap;
-}
-
-.sunglassName{
-  flex: 1 1;
-  font-size: calc(0.8vw + 0.8vh);
-  font-weight: 600;
-}
-
-.sunglass{
-  margin: 0 2%;
-  flex: 1 1;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  box-shadow: 0 0 30px #ccc;
-  transition: 0.2s;
-}
-.sunglass:hover{
-  transform: scale(1.05);
-  box-shadow: 0 0 40px #ccc;
-  transition: 0.2s;
-}
-.sunglasses__title{
-  margin-top: 2%;
-  font-size: calc(1.3vw + 1.3vh);
-  font-weight: 600;
-}
-.bags__title{
-  font-size: calc(1.3vw + 1.3vh);
-  font-weight: 600;
-}
-.groupViewAll{
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-}
-.pinkArrow{
-  margin-top: 7px;
-  margin-left: 5px;
-  max-width: 20px;
-  max-height: 10px;
-}
-.viewAll{
-  color: deeppink;
-  text-align: center;
-  cursor: pointer;
-}
-.pinkLine{
-  width: 0px;
-  height: 2px;
-  transition: 0.5s;
-}
-.pinkLine:hover{
-  transition: 0.5s;
-  width: 100%;
-}
-
-
-.promisesContainer{
-  padding: 2% 10%;
-  margin-top: 5%;
-  text-align: center;
-  background-color: #f0f0f0;
-}
-.promises{
-  margin-top: 5%;
-  display:flex;
-  justify-content: space-between;
-  padding-bottom: 40px;
-}
-.title{
-font-size:calc(1vw + 1vh);
-  margin-top: 7%;
-  margin-bottom: 7%;
-}
-.promise{
-  max-width: 50%;
-  position: relative;
-  padding: 2% 3%;
-  transition: 0.2s;
-}
-.promise:hover{
-  background-color: #ffffff;
-  transition: 0.2s;
-  box-shadow: 0 0 50px #ccc;
-  border-bottom: deeppink solid 2px;
-}
-.desc{
-  font-size:  calc(0.55vw + 0.55vh);
-  margin-bottom: 30%;
-}
-
-.knowMore{
-  color: deeppink;
-  text-align: center;
-}
-
-.groupKnowMore{
-  position:absolute;
-  width: 100%;
-  bottom: 5%;
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.brandsContainer{
-  text-align: center;
-  max-width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-}
-.blueLine{
-  margin-bottom: 5%;
-}
-.brands{
-  display:flex;
-  justify-content: space-between;
-}
-
-.brandsContainerTitle{
-  font-weight: 700;
-}
-
-.brand{
-  max-width: 25%;
-  cursor: pointer;
-  padding: 20px;
-  margin-bottom: 3%;
-}
-.brandImage{
-  filter: brightness(10%);
-  transform: scale(1);
-  transition: 0.3s;
-  width: 100%;
-  height: auto;
-}
-.brandImage:hover{
-  filter : brightness(100%);
-  transition: 0.3s;
-  transform: scale(1.2);
-}
-
-.groupEnding{
-  max-width: 90%;
-  margin: 5%;
-  display:flex;
-  justify-content: space-between;
-}
-.horLine{
-  border-top: 3px solid rgba(0, 0, 0, 0.08);
-}
-.responsiveTitle{
-  font-size: calc(50% + 1vw + 1vh);
-}
-.mailGroup{
-  margin-top: 5%;
-  height: 50px;
-}
-input::placeholder{
-  color: #ccc;
-}
-.mailInput{
-  font-weight: 700;
-  text-indent:40px;
-  height:  50px;
-  font-size:  calc(-38% + 1vw + 1vh);
-  width: 80%;
-  border: none;
-  box-shadow: 0 0 10px #ccc;
-}
-.registerNow{
-  font-size:  calc(-38% + 1vw + 1vh);
-  margin-top: 5%;
-  color: #aaa
-}
-.appImg{
-  margin-top: 5%;
-  margin-right: 3%;
-  width: 100px;
-}
-.groupApp{
- display: flex;
-}
-.follows{
-  color: #aaa;
-  font-size:  calc(-38% + 1vw + 1vh);
-}
-.promiseImage{
-  max-height: 7vw;
-  max-width: 7vw;
-}
-.copyright{
-  text-align: center;
-  color: #aaa;
-}
-.followImage{
-  cursor: pointer;
-  width:40px;
-  margin-right: 10%;
-  margin-bottom: 10%;
-}
-.groupBuy{
-  display: flex;
-  flex-wrap: wrap;
-  flex: 0 1;
-  transition: 0.2s;
-  opacity: 0;
-}
-.add{
-  flex: 1 1 30px;
-  font-size:  calc(-30% + 1vw + 1vh);
-  border: solid 2px #ddd;
+  right: 50%;
+  border-radius: 100%;
+  min-width: 1vw;
+  color: blue;
   background-color: white;
-  height: 4vw;
-}
-.buy{
-  flex: 1 1 30px;
-  font-size:  calc(-30% + 1vw + 1vh);;
-  border: solid 0;
-  background-color: deeppink;
-  color: white;
-  font-weight: 600;
-  height: 4vw
-}
-.link{
-  color: #777;
-  cursor: pointer;
-  font-size:  calc(-38% + 1vw + 1vh);
-}
-.link:hover{
-  color: #000;
-  font-weight: bold;
-}
-.promises2{
-  display: flex;
-  justify-content: space-between;
 }
 
-.left{
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  right:98.5%;
-  top: 30%;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px #aaa;
+.loginButton {
+    flex: 0.5 1;
+    min-height: calc(1.8vw + 1.8vh);
+  font-size: calc(0.8vw + 0.8vh);
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 2px #6c48bd,
+    -2px -2px 2px #6c48bd;
+  margin-right: 3vw;
 }
-.right{
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  left:98.5%;
-  top: 30%;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px #aaa;
+
+.dropDown {
+    flex: 1 1;
+    max-width: calc(2vw + 2vh);
+    height: auto;
+  margin-right: 5vw;
 }
-.sunglasses__left{
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  right: 104%;
-  top:47%;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px #aaa;
+
+.backgroundGradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #b6f2c6 0%, white 40%);
+    z-index: -3
 }
-.sunglasses__right{
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  left: 104%;
-  top:47%;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px #aaa;
+
+.background {
+    position: absolute;
+
+    width: 50%;
+    height: auto;
+    right: 0;
+    top: 0;
+    z-index: -2
 }
 
 
-@media (max-width: 1300px){
-  .left{
-    right:97%;
-    top: 27%;
-  }
-  .right{
-    left:97%;
-    top: 27%;
-  }
-  .sunglasses__left{
-  right: 102%;
-  top: 40%;
-  }
-  .sunglasses__right{
- left: 102%;
-    top: 40%;
-  }
-  .products{
+.searchGroup {
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 50px;
+}
+
+.searchInput {
+    font-weight: 900;
+    text-indent: 40px;
+    height: 50px;
+    font-size: calc(-38% + 1vw + 1vh);
+    width: 40%;
+    border: none;
+    box-shadow: 0 0 30px #ccc;
+}
+
+.searchLine {
+    -webkit-user-drag: none;
+    position: relative;
+    left: 6px;
+    width: 10px;
+    height: 52px;
+    margin-bottom: 5px;
+
+}
+
+.searchIcon {
+    position: relative;
+    right: 3%;
+    -webkit-user-drag: none;
+    cursor: pointer;
+}
+
+.pinkCircle {
+    margin-right: 2%;
+}
+
+.groupVideo {
+    margin-left: 11%;
+    margin-top: 3%
+}
+
+.watchVideo {
+    font-weight: 800;
+    display: inline;
+    color: grey;
+}
+
+.bagContainer {
+    text-align: center;
+    max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%;
-    max-width: 90%;
-  }
-  .knowMore{
-    margin-top: 3px;
-    font-size: 13px;
-  }
-  .name{
-    width:15%
-  }
-
-  .mailInput{
-    height: 30px;
-    font-size: 15px;
-  }
-  .mailInput{
-    height: 30px;
-    font-size: 15px;
-  }
-  .searchInput{
-    height: 30px;
-    font-size: 15px;
-  }
-  .searchLine{
-    margin-top: 3px;
-    height: 32px;
-  }
 }
-@media (max-width: 600px) {
-  .bags{
-    display: block;
-  }
-  .bag{
-    display: block;
-    margin: 5%;
-    max-width: 90%;
-  }
 
-  .sunglasses{
-    display: block;
-  }
-  .sunglass{
-    display:block;
-    margin: 5%;
-    max-width: 90%;
-  }
-  .buy{
-    font-size: 13px;
-    height: 50px;
-  }
-  .add{
-    height: 50px;
-    font-size: 13px;
-  }
-  .groupEnding{
-    display: block
-  }
-  .follows{
-    max-width: 70%;
-    font-size: 13px;
-  }
-  .copyright{
-    font-size: 13px;
-  }
-  .link{
-    font-size: 13px;
-  }
-  .responsiveTitle{
-    font-size: 20px;
-  }
-  .searchInput{
-    margin-top: 15%;
-    font-size: 15px;
-    width: 80%;
-  }
-  .searchLine{
-    margin-top: 3px;
-  }
-  .groupVideo{
-    margin-top: 15%;
-    margin-bottom: 10%;
-  }
-  .searchIcon{
-    right: 8%;
-  }
-  .mailInput{
-    font-size: 15px;
-    width: 50%;
-  }
-  .registerNow{
-    font-size: 13px;
-  }
-  .bagName{
-    font-size: 13px;
-  }
-  .sunglassName{
-    font-size: 13px;
-  }
-  .promises{
-    display: block;
-  }
-  .promise{
-    margin: 3%;
-    max-width: 44%;
-  }
-  .desc{
-    font-size: 13px;
-  }
-  .title{
-    font-size: 20px;
-  }
-  .promiseImage{
-    max-width: none;
-    max-height: none;
-  }
-  .introduction{
-    height: 350px;
-  }
-  .groupKnowMore{
-    bottom: 0;
-  }
-  .groupTopbar{
-    display: block;
-  }
-  .dropdownMenu{
-    margin-bottom: 5%;
+.bags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bagName {
+    flex: 1 1;
+    font-size: calc(0.8vw + 0.8vh);
+    font-weight: 600;
+}
+
+.line {
+    margin-bottom: 3%;
+}
+
+.bag {
+    margin: 0 2%;
+    flex: 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 0 30px #ccc;
+    transition: 0.2s;
+}
+
+.bag:hover {
+    box-shadow: 0 0 40px #ccc;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.normalBag {
+    text-align: center;
+    flex: 10 1;
+    padding: 15px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+}
+
+.normalGlasses {
+    text-align: center;
+    flex: 10 1;
+    padding: 15px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+}
+
+
+.products {
+    position: relative;
+    padding-top: 20px;
+    margin-top: 10%;
     margin-left: 10%;
-  }
-  .cart{
-    margin-left: 10%;
-  }
-  .loginButton{
-    margin-left: 5%;
-    width: 20%
-  }
-  .dropDown{
-    margin-left: 10%;
-  }
-  .heart{
+    margin-right: 10%;
+    max-width: 80%;
+    box-shadow: 0 0 30px #ccc;;
+}
+
+.groupHeartPrice {
+    transition: 0.2s;
+    flex: 1 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price {
+    flex: 1 1;
+    font-size: calc(0.8vh + 0.8vw);
+    font-weight: 600;
+}
+
+.heart {
+    flex: 1 1;
+    cursor: pointer;
     max-width: 20px;
     max-height: 20px;
-  }
-  .price{
-    font-size: 15px;
 }
-  .left{
-    display: none;
-  }
-  .sunglasses__right{
-    display: none;
-  }
-  .left{
-    display: none;
-  }
-  .sunglasses__right{
-    display: none;
-  }
+
+.bagImage {
+    flex: 5 1;
+    transition: 0.2s;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.sunglassesImage {
+    flex: 5 1;
+    transition: 0.2s;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.sunglassesContainer {
+    position: relative;
+    text-align: center;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sunglasses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sunglassName {
+    flex: 1 1;
+    font-size: calc(0.8vw + 0.8vh);
+    font-weight: 600;
+}
+
+.sunglass {
+    margin: 0 2%;
+    flex: 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 0 30px #ccc;
+    transition: 0.2s;
+}
+
+.sunglass:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #ccc;
+    transition: 0.2s;
+}
+
+.sunglasses__title {
+    margin-top: 2%;
+    font-size: calc(1.3vw + 1.3vh);
+    font-weight: 600;
+}
+
+.bags__title {
+    font-size: calc(1.3vw + 1.3vh);
+    font-weight: 600;
+}
+
+.groupViewAll {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.pinkArrow {
+    margin-top: 7px;
+    margin-left: 5px;
+    max-width: 20px;
+    max-height: 10px;
+}
+
+.viewAll {
+    color: deeppink;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pinkLine {
+    width: 0px;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.pinkLine:hover {
+    transition: 0.5s;
+    width: 100%;
+}
+
+
+.promisesContainer {
+    padding: 2% 10%;
+    margin-top: 5%;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.promises {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.title {
+    font-size: calc(1vw + 1vh);
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.promise {
+    max-width: 50%;
+    position: relative;
+    padding: 2% 3%;
+    transition: 0.2s;
+}
+
+.promise:hover {
+    background-color: #ffffff;
+    transition: 0.2s;
+    box-shadow: 0 0 50px #ccc;
+    border-bottom: deeppink solid 2px;
+}
+
+.desc {
+    font-size: calc(0.55vw + 0.55vh);
+    margin-bottom: 30%;
+}
+
+.knowMore {
+    color: deeppink;
+    text-align: center;
+}
+
+.groupKnowMore {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.brandsContainer {
+    text-align: center;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.blueLine {
+    margin-bottom: 5%;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandsContainerTitle {
+    font-weight: 700;
+}
+
+.brand {
+    max-width: 25%;
+    cursor: pointer;
+    padding: 20px;
+    margin-bottom: 3%;
+}
+
+.brandImage {
+    filter: brightness(10%);
+    transform: scale(1);
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+}
+
+.brandImage:hover {
+    filter: brightness(100%);
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.groupEnding {
+    max-width: 90%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.horLine {
+    border-top: 3px solid rgba(0, 0, 0, 0.08);
+}
+
+.responsiveTitle {
+    font-size: calc(50% + 1vw + 1vh);
+}
+
+.mailGroup {
+    margin-top: 5%;
+    height: 50px;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+.mailInput {
+    font-weight: 700;
+    text-indent: 40px;
+    height: 50px;
+    font-size: calc(-38% + 1vw + 1vh);
+    width: 80%;
+    border: none;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.registerNow {
+    font-size: calc(-38% + 1vw + 1vh);
+    margin-top: 5%;
+    color: #aaa
+}
+
+.appImg {
+    margin-top: 5%;
+    margin-right: 3%;
+    width: 100px;
+}
+
+.groupApp {
+    display: flex;
+}
+
+.follows {
+    color: #aaa;
+    font-size: calc(-38% + 1vw + 1vh);
+}
+
+.promiseImage {
+    max-height: 7vw;
+    max-width: 7vw;
+}
+
+.copyright {
+    text-align: center;
+    color: #aaa;
+}
+
+.followImage {
+    cursor: pointer;
+    width: 40px;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.groupBuy {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.add {
+    flex: 1 1 30px;
+    font-size: calc(-30% + 1vw + 1vh);
+    border: solid 2px #ddd;
+    background-color: white;
+    height: 4vw;
+}
+
+.buy {
+    flex: 1 1 30px;
+    font-size: calc(-30% + 1vw + 1vh);;
+    border: solid 0;
+    background-color: deeppink;
+    color: white;
+    font-weight: 600;
+    height: 4vw
+}
+
+.link {
+    color: #777;
+    cursor: pointer;
+    font-size: calc(-38% + 1vw + 1vh);
+}
+
+.link:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.promises2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 98.5%;
+    top: 30%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+.right {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    left: 98.5%;
+    top: 30%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+.sunglasses__left {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 104%;
+    top: 47%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+.sunglasses__right {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    left: 104%;
+    top: 47%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+.dropdown__categories {
+    font-size: calc(0.8vw + 0.8vh);
+}
+
+
+@media (max-width: 1300px) {
+    .left {
+        right: 97%;
+        top: 27%;
+    }
+
+    .right {
+        left: 97%;
+        top: 27%;
+    }
+
+    .sunglasses__left {
+        right: 102%;
+        top: 40%;
+    }
+
+    .sunglasses__right {
+        left: 102%;
+        top: 40%;
+    }
+
+    .products {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        max-width: 90%;
+    }
+
+    .knowMore {
+        margin-top: 3px;
+        font-size: 13px;
+    }
+
+    .name {
+        width: 15%
+    }
+
+    .mailInput {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .mailInput {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .searchInput {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .searchLine {
+        margin-top: 3px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bags {
+        display: block;
+    }
+
+    .bag {
+        display: block;
+        margin: 5%;
+        max-width: 90%;
+    }
+
+    .sunglasses {
+        display: block;
+    }
+
+    .sunglass {
+        display: block;
+        margin: 5%;
+        max-width: 90%;
+    }
+
+    .buy {
+        font-size: 13px;
+        height: 50px;
+    }
+
+    .add {
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .groupEnding {
+        display: block
+    }
+
+    .follows {
+        max-width: 70%;
+        font-size: 13px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+
+    .responsiveTitle {
+        font-size: 20px;
+    }
+
+    .searchInput {
+        margin-top: 15%;
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .searchLine {
+        margin-top: 3px;
+    }
+
+    .groupVideo {
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .searchIcon {
+        right: 8%;
+    }
+
+    .mailInput {
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .registerNow {
+        font-size: 13px;
+    }
+
+    .bagName {
+        font-size: 13px;
+    }
+
+    .sunglassName {
+        font-size: 13px;
+    }
+
+    .promises {
+        display: block;
+    }
+
+    .promise {
+        margin: 3%;
+        max-width: 44%;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .promiseImage {
+        max-width: none;
+        max-height: none;
+    }
+
+    .introduction {
+        height: 350px;
+    }
+
+    .groupKnowMore {
+        bottom: 0;
+    }
+
+    .groupTopbar {
+        display: block;
+    }
+
+    .dropdownMenu {
+        margin-bottom: 5%;
+        margin-left: 10%;
+    }
+
+    .cart {
+        margin-left: 10%;
+    }
+
+    .loginButton {
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 20%
+    }
+
+    .dropDown {
+        margin-left: 10%;
+    }
+
+    .heart {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .sunglasses__right {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .sunglasses__left {
+        display: none;
+    }
 }

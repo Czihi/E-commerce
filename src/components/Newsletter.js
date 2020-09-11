@@ -13,8 +13,8 @@ const Newsletter = ()=>{
         <p className="registerNow">Register now to get updates on promotions and coupons</p>
         <b>Get it On</b>
         <div className="groupApp">
-        <img className="appImg" src={gp} alt="gp"/>
-        <img className="appImg" src={as} alt="as"/>
+        <img className="appImg" src={gp} alt="gp" unselectable={true} draggable={false}/>
+        <img className="appImg" src={as} alt="as" unselectable={true} draggable={false}/>
         </div>
     </div>)
 };

@@ -16,9 +16,9 @@ const Sunglasses = (props) => {
         document.getElementById("va").style.width = "0px"
     }
 
-    return (<div className="sunglassesContainer">
-        <img src={left} alt="left" className="sunglasses__left"/>
-        <img src={right} alt="right" className="sunglasses__right"/>
+    return (<div id="sunglasses" className="sunglassesContainer">
+        <img src={left} alt="left" className="sunglasses__left" unselectable={true} draggable={false}/>
+        <img src={right} alt="right" className="sunglasses__right" unselectable={true} draggable={false}/>
         <p className="sunglasses__title">Sunglasses</p>
         <img className="blueLine" src={line} alt="line"/>
         <div className="sunglasses">

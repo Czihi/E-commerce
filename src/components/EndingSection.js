@@ -5,7 +5,7 @@ import Newsletter from "./Newsletter";
 import Follow from "./Follow";
 
 const EndingSection = (props) => {
-    return (<div>
+    return (<div id="about">
         <hr className="horLine"/>
         <div className="groupEnding">
             <Support/>

@@ -12,9 +12,9 @@ const Follow = (props) => {
         <h3 className="responsiveTitle">Follow us on</h3>
         <hr/>
         <div>
-            <img onMouseOver={props.twitter} onMouseOut={props.clear} className="followImage" src={images[props.logos[0]]} alt="t"/>
-            <img onMouseOver={props.facebook} onMouseOut={props.clear} className="followImage" src={images[props.logos[1]]} alt="fb"/>
-            <img onMouseOver={props.google}  onMouseOut={props.clear} className="followImage" src={images[props.logos[2]]} alt="gp"/>
+            <img onMouseOver={props.twitter} onMouseOut={props.clear} className="followImage" src={images[props.logos[0]]} alt="t" unselectable={true} draggable={false}/>
+            <img onMouseOver={props.facebook} onMouseOut={props.clear} className="followImage" src={images[props.logos[1]]} alt="fb" unselectable={true} draggable={false}/>
+            <img onMouseOver={props.google}  onMouseOut={props.clear} className="followImage" src={images[props.logos[2]]} alt="gp" unselectable={true} draggable={false}/>
         </div>
         <p className="follows"> contact@blackbox.lk</p>
         <p className="follows">Whatsapp - 947 666 85 333</p>

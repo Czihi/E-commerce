@@ -5,9 +5,9 @@ import right from "../images/right.png"
 import Bag from "./Bag";
 
 const Bags = (props) => {
-    return (<div className="bagContainer">
-        <img src={left} alt="left" className="left"/>
-        <img src={right} alt="right" className="right"/>
+    return (<div id="handbags" className="bagContainer">
+        <img src={left} alt="left" className="left" unselectable={true} draggable={false}/>
+        <img src={right} alt="right" className="right" unselectable={true} draggable={false}/>
         <p className="bags__title">Handbags</p>
         <img className="line" src={line} alt="line"/>
         <div className="bags">

@@ -5,8 +5,8 @@ import line from "../images/blueLine.png";
 
 const PromisePanel = () =>{
 
-    return(<div className="promisesContainer">
-        <h3>What we promise ?</h3>
+    return(<div id="promises" className="promisesContainer">
+        <h3>What we promise?</h3>
         <img src={line} alt="line"/>
         <div className="promises">
             <div className="promises2">
